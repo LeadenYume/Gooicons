@@ -1,0 +1,25 @@
+.main {
+    background: #c9c8c8;
+    border-radius: 10px;
+    width: 30px;
+    height: 20px;
+    padding: 2px;
+    transition: 0.15s;
+}
+
+.switch {
+    border-radius: 10px;
+    width: 16px;
+    height: 16px;
+    background: #ffffff;
+    pointer-events: none;
+    transition: 0.15s;
+}
+
+.mainChecked{
+    background: #2dcc55;
+}
+
+.switchChecked {
+    transform: translate(10px, 0px);
+}

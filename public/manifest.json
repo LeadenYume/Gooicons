@@ -1,0 +1,30 @@
+{
+    "name": "GooIcons",
+    "description": "Google is a very good search engine, but there are no icons in the results list. This makes it difficult to find.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Open the popup",
+        "default_icon": {
+            "128": "./icon/logo-128.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "./static/js/contentScript.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "storage", "activeTab", "tabs"
+    ],
+    "icons": {
+        "128": "./icon/logo-128.png"
+    }
+}

@@ -1,0 +1,53 @@
+body {
+    background-color: #b9bbbe;
+}
+
+:root {
+    --transition-time-theme: 0.5s;
+    --scale-factor: 1;
+    --color-text-default: #b9bbbe;
+    --color-text-light: #e0e0e0;
+    --color-text-weak: #85898f;
+}
+
+* {
+    box-sizing: border-box;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.app {
+    width: 200px;
+    height: 50px;
+    background: #ffffff;
+    color: black;
+    padding: 10px;
+}
+
+.logo {
+    font-weight: 300;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.flex-line {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.flex-line-space {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+}
