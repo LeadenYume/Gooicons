@@ -14,7 +14,7 @@ export interface SliderCheckboxProps {
 export function SliderCheckbox(props: SliderCheckboxProps) {
     let inputRef = useRef(React.createRef<HTMLDivElement>());
     let [value, setValue] = useState(props.startValue ? true : false);
-    console.log(value);
+
     let valueRef = useRef(value);
     valueRef.current = value;
 

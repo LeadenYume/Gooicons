@@ -1,11 +1,11 @@
 export { }
 
-interface injectNode {
+interface InjectNode {
     div: ChildNode;
     a: ChildNode;
 }
 
-function GetInjectNode(node: ChildNode): injectNode | undefined {
+function getInjectNode(node: ChildNode): InjectNode | undefined {
     let exit = false;
     let deep = 0;
     let currentNode = node;
@@ -37,7 +37,7 @@ async function work() {
     let rso = document.getElementById("rso");
     rso?.childNodes.forEach((child) => {
         if (child.nodeName !== "SCRIPT" && child.nodeName !== "STYLE") {
-            let injectNode = GetInjectNode(child);
+            let injectNode = getInjectNode(child);
             if (injectNode !== undefined) {
                 let href = (injectNode.a as HTMLLinkElement).href.split('://')[1].split('/')[0];
                 var newNode = document.createElement("img");
